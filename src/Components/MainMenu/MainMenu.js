@@ -12,6 +12,7 @@ function MainMenu() {
     }
     fetchProducts();
   }, []);
+
   return (
     <div>
       {products.map((product) => {
