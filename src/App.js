@@ -3,7 +3,7 @@ import MainMenu from "./Components/MainMenu/MainMenu";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container-fluid">
       <MainMenu />
     </div>
   );
