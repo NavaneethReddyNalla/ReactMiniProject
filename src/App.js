@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <div className="container-fluid">
+      <div className="container-fluid p-2">
         <MainMenu />
       </div>
     </div>
