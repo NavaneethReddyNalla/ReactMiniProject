@@ -2,18 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Card from "../Card/Card";
 
-function MainMenu() {
-  const [products, setProducts] = useState([]);
+function MainMenu({ products, setProduct }) {
   const [search, setSearch] = useState("");
-
-  useEffect(() => {
-    async function fetchProducts() {
-      let prods = await fetch("https://fakestoreapi.com/products");
-      prods = await prods.json();
-      setProducts(prods);
-    }
-    fetchProducts();
-  }, []);
 
   function handleSearch(event) {
     setSearch(event.target.value);
@@ -35,7 +25,7 @@ function MainMenu() {
           .map((product) => {
             return (
               <div className="col" key={product.id}>
-                <Card product={product} />
+                <Card product={product} setProduct={setProduct} />
               </div>
             );
           })}

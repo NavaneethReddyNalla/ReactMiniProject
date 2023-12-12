@@ -1,9 +1,13 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./Card.css";
 
-function Card({ product }) {
+function Card({ product, setProduct }) {
+  function handleClick(event) {
+    setProduct(product);
+  }
+
   return (
     <div className="card p-1" style={{ height: "350px" }}>
       <img
@@ -17,9 +21,14 @@ function Card({ product }) {
         </h6>
       </div>
       <div className="card-footer">
-        <button id="btn-details" className="btn">
+        <Link
+          to={`/${product.id}`}
+          id="btn-details"
+          className="btn"
+          onClick={handleClick}
+        >
           Details
-        </button>
+        </Link>
       </div>
     </div>
   );
