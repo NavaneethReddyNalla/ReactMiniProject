@@ -35,7 +35,7 @@ function App() {
     },
   ]);
   return (
-    <div className="App bg-secondary bg-gradient">
+    <div className="App">
       <RouterProvider router={router} />
     </div>
   );
