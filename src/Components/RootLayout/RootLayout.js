@@ -8,7 +8,9 @@ function RootLayout() {
       <div id="header">
         <h1>Retail-X Online Store</h1>
       </div>
-      <Outlet />
+      <div className="container-fluid p-2">
+        <Outlet />
+      </div>
     </div>
   );
 }
