@@ -7,6 +7,12 @@
         min-height: 75vh;
         flex-wrap: wrap;
     }
+
+    .back-btn {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
 }
 
 .img-side img {
