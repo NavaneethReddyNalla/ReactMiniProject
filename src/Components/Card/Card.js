@@ -17,7 +17,10 @@ function Card({ product, setProduct }) {
       />
       <div className="card-body">
         <h6 className="card-title lead fs-6">
-          <b>{product.title}</b>
+          <b>
+            {product.title.length > 79 && product.title.slice(80) + "..."}
+            {product.title.length <= 79 && product.title}
+          </b>
         </h6>
       </div>
       <div className="card-footer text-center">
