@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Card from "../Card/Card";
 
 function MainMenu({ products, setProduct }) {
