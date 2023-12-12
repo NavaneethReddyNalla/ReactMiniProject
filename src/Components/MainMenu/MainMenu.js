@@ -20,7 +20,7 @@ function MainMenu({ products, setProduct }) {
       <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 row-cols-xxl-6 g-3">
         {products
           .filter((product) =>
-            product.title.toLowerCase().startsWith(search.toLowerCase())
+            product.title.toLowerCase().includes(search.toLowerCase())
           )
           .map((product) => {
             return (
