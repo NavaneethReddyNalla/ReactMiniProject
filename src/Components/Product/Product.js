@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Product({ product }) {
   return (
-    <div id="product">
+    <div id="product" className="p-3">
       <div className="img-side text-center">
         <img src={product.image} alt="Product" />
       </div>
