@@ -20,7 +20,7 @@ function Card({ product, setProduct }) {
           <b>{product.title}</b>
         </h6>
       </div>
-      <div className="card-footer">
+      <div className="card-footer text-center">
         <Link
           to={`/${product.id}`}
           id="btn-details"

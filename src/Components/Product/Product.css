@@ -1,0 +1,22 @@
+#product {
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 70vh;
+}
+
+.img-side img {
+    width: 200px;
+}
+
+.img-side {
+    flex-basis: 0;
+    flex-grow: 1;
+    background-color: white;
+}
+
+.details {
+    flex-basis: 0;
+    flex-grow: 2;
+}

@@ -5,7 +5,7 @@ import "./RootLayout.css";
 function RootLayout() {
   return (
     <div>
-      <div id="header">
+      <div id="header" className="text-center">
         <h1>Retail-X Online Store</h1>
       </div>
       <div className="container-fluid p-2">
