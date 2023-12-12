@@ -17,7 +17,7 @@ function MainMenu({ products, setProduct }) {
         placeholder="Search by product name"
         onChange={handleSearch}
       />
-      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 row-cols-xxl-6 g-3">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 row-cols-xxl-6 g-3 p-3">
         {products
           .filter((product) =>
             product.title.toLowerCase().includes(search.toLowerCase())
