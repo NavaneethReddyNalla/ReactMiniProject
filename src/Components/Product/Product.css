@@ -1,9 +1,12 @@
-#product {
-    display: flex;
-    gap: 50px;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 75vh;
+@media screen and (min-width: 600px) {
+    #product {
+        display: flex;
+        gap: 50px;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 75vh;
+        flex-wrap: wrap;
+    }
 }
 
 .img-side img {
@@ -14,6 +17,7 @@
     flex-basis: 0;
     flex-grow: 1;
     background-color: white;
+    margin-bottom: 1rem;
 }
 
 .details {

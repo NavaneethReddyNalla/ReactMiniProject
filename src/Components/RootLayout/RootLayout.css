@@ -1,3 +1,9 @@
+@media screen and (max-width: 415px) {
+    #header h1 {
+        display: none;
+    }
+}
+
 #header {
     background-color: #6320EE;
     color: #FFFFFF;
