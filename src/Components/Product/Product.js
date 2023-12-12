@@ -1,5 +1,6 @@
 import React from "react";
 import "./Product.css";
+import { Link } from "react-router-dom";
 
 function Product({ product }) {
   return (
@@ -13,6 +14,9 @@ function Product({ product }) {
         <p>{product.description}</p>
         <h2>Rating: {product.rating.rate} / 5</h2>
       </div>
+      <Link to="/" className="btn text-white back-btn">
+        ← Back
+      </Link>
     </div>
   );
 }
